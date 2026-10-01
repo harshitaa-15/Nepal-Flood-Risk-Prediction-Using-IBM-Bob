@@ -1,0 +1,17 @@
+{
+  "month_sin": 0.11474289455028039,
+  "day_of_year": 0.09697476911289961,
+  "dew_point_mean_c": 0.08310389767467885,
+  "relative_humidity_mean_pct_roll7_mean": 0.05861714168228504,
+  "relative_humidity_mean_pct_roll7_sum": 0.05541731101883978,
+  "rain_mm_roll7_sum": 0.043061141049677266,
+  "rain_mm_roll7_mean": 0.04177071554902026,
+  "temperature_mean_c": 0.038384119176228325,
+  "soil_moisture_0_100cm_m3m3": 0.03761561968357767,
+  "relative_humidity_mean_pct_roll3_sum": 0.03737081727757128,
+  "month_cos": 0.036777067196290356,
+  "precipitation_mm_roll7_sum": 0.03443549242105919,
+  "saturation_index": 0.03330119374559944,
+  "relative_humidity_mean_pct_roll3_mean": 0.03249085450111025,
+  "precipitation_mm_roll7_mean": 0.030865123260245195
+}
