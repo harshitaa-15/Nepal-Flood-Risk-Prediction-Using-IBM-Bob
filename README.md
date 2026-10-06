@@ -1,7 +1,5 @@
 # Nepal Flood Risk Prediction & Early Warning System
 
-
-
 A complete end-to-end Machine Learning web application that predicts **flood risk levels** across Nepal's major river monitoring stations using daily weather and hydrological data (2023–2026).
 
 ---
