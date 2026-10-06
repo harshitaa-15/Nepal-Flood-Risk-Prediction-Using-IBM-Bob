@@ -1,6 +1,5 @@
 # Nepal Flood Risk Prediction & Early Warning System
 
-harshita
 
 A complete end-to-end Machine Learning web application that predicts **flood risk levels** across Nepal's major river monitoring stations using daily weather and hydrological data (2023–2026).
 
@@ -189,6 +188,9 @@ The dataset is significantly imbalanced (75% LOW, 15% MEDIUM, 10% HIGH). SMOTE i
 | Persistence | joblib |
 
 ---
+
+
+
 
 *Nepal Flood Risk Prediction & Early Warning System — Built for ML/Data Analytics Portfolio*
 
