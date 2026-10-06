@@ -188,12 +188,6 @@ The dataset is significantly imbalanced (75% LOW, 15% MEDIUM, 10% HIGH). SMOTE i
 
 ---
 
-## License
-
-MIT — free to use for portfolio, academic, and non-commercial purposes.
-
----
-
 *Nepal Flood Risk Prediction & Early Warning System — Built for ML/Data Analytics Portfolio*
 
 
