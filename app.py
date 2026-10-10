@@ -62,6 +62,9 @@ html, body, [class*="css"] { font-family: "Inter", "Segoe UI", system-ui, sans-s
 /* ── Hide Streamlit chrome ── */
 #MainMenu { visibility: hidden; }
 footer { visibility: hidden; }
+a[href*="github.com"] { display: none !important; }
+button[title="Fork this app"] { display: none !important; }
+[data-testid="stToolbar"] { display: none !important; }
 
 /* ── Sidebar ── */
 [data-testid="stSidebar"] {
