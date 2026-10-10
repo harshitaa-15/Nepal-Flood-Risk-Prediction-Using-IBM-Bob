@@ -17,9 +17,10 @@ import matplotlib.pyplot as plt
 
 warnings.filterwarnings("ignore")
 
-ROOT_DIR   = os.path.dirname(__file__)
-SRC_DIR    = os.path.join(ROOT_DIR, "src")
-MODELS_DIR = os.path.join(ROOT_DIR, "models")
+from pathlib import Path
+ROOT_DIR   = str(Path(__file__).resolve().parent)
+SRC_DIR    = str(Path(__file__).resolve().parent / "src")
+MODELS_DIR = str(Path(__file__).resolve().parent / "models")
 sys.path.insert(0, SRC_DIR)
 
 from data_preprocessing import load_raw, preprocess, FLOOD_LABELS, FLOOD_COLORS, get_display_feature_meta
@@ -262,6 +263,20 @@ div[data-testid="stFormSubmitButton"] > button {
 div[data-testid="stFormSubmitButton"] > button:hover { background:#1e40af; }
 </style>
 """, unsafe_allow_html=True)
+
+
+# ═════════════════════════════════════════════════════════════════════════════
+# Auto-train: if model artifacts are missing (e.g. on Streamlit Cloud where
+# .pkl files are not committed), run the full training pipeline once.
+# ═════════════════════════════════════════════════════════════════════════════
+def _ensure_model_trained():
+    model_path = os.path.join(MODELS_DIR, "best_model.pkl")
+    if not os.path.exists(model_path):
+        import train_model as _tm
+        with st.spinner("First-run setup: training model (this takes ~60 seconds)..."):
+            _tm.train()
+
+_ensure_model_trained()
 
 
 # ═════════════════════════════════════════════════════════════════════════════
